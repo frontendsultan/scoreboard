@@ -1,0 +1,73 @@
+:root {
+  --white: #eeeeee;
+  --blue: #1b244a;
+  --red: #f94f6d;
+  --black: #080001;
+  --border: 2px solid #9aabd8;
+  --font-family-score: "Cursed Timer ULiL", sans-serif;
+  --font-family-heading: Verdana;
+  --light-blue: #9aabd8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--font-family-heading);
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+.score {
+  margin-top: 20px;
+ padding-top: 15px;
+  width:120px;
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--black);
+  font-size: 90px;
+  color: var(--red);
+  font-family: var(--font-family-score);
+}
+
+.btn-set {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  /* outline:1px solid green; */
+}
+
+.btn-set button {
+  padding: 10px;
+  color: var(--light-blue);
+  background-color: transparent;
+  border: var(--border);
+  border-radius: 5px;
+  font-family: var(--font-family-score);
+}
+
+button + button {
+  margin-left: 18px;
+}
