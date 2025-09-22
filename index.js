@@ -1,3 +1,5 @@
+// this is a js file
+
 let scoreHome = document.getElementById("score-home");
 let scoreH = 0;
 
